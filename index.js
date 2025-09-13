@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import errorHandler from "./src/middleware/errorHandler.js";
 import connectDB from "./src/config/db.js";
 import authRouter from "./src/routes/authRoutes.js";
+import userRouter from "./src/routes/userRoutes.js";
 
 dotenv.config();
 
@@ -13,6 +14,7 @@ app.get("/", (req, res) => {
   res.status(200).send("Application is working well");
 });
 app.use("/api/auth", authRouter);
+app.use("/api/user", userRouter);
 
 app.use(errorHandler);
 app.listen(PORT, () => {
