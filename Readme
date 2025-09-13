@@ -1,0 +1,28 @@
+# 🍽️ Recipes App API
+
+A simple **CRUD (Create, Read, Update, Delete)** REST API for managing recipes, built with:
+
+- **Node.js**
+- **Express.js**
+- **MongoDB** (via Mongoose)
+- **Postman** for API testing
+
+The project follows the **MVC pattern** with separate folders for models, controllers, middlewares, and routes.
+
+---
+
+## 📌 Features
+
+- Create a new recipe ✅
+- Get all recipes with count ✅
+- Get a single recipe by ID ✅
+- Update a recipe by ID ✅
+- Delete a recipe by ID ✅
+- Middleware validation:
+  - Check valid MongoDB ObjectId
+  - Prevent duplicate recipe titles
+
+---
+
+## 📂 Project Structure
+
