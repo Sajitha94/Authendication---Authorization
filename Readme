@@ -1,28 +1,48 @@
-# 🍽️ Recipes App API
+# 🔐 Authentication & Authorization API
 
-A simple **CRUD (Create, Read, Update, Delete)** REST API for managing recipes, built with:
-
-- **Node.js**
-- **Express.js**
-- **MongoDB** (via Mongoose)
-- **Postman** for API testing
-
-The project follows the **MVC pattern** with separate folders for models, controllers, middlewares, and routes.
+A Node.js REST API built with **Express.js**, **MongoDB**, and **JWT** for secure user authentication and authorization.  
+It follows the **MVC pattern**, includes **JWT-based bearer token authentication**, and provides clean API responses.
 
 ---
 
-## 📌 Features
+## 🚀 Live Demo
 
-- Create a new recipe ✅
-- Get all recipes with count ✅
-- Get a single recipe by ID ✅
-- Update a recipe by ID ✅
-- Delete a recipe by ID ✅
-- Middleware validation:
-  - Check valid MongoDB ObjectId
-  - Prevent duplicate recipe titles
+- 🌐 [Render Deployment](https://authendication-authorization-1-qzdr.onrender.com)
 
 ---
 
-## 📂 Project Structure
+## 📂 Repository
 
+- 📌 [GitHub Repository](https://github.com/Sajitha94/Authendication---Authorization)
+
+---
+
+## ✨ Features
+
+- ✅ User Registration with **hashed passwords** (bcryptjs)
+- ✅ User Login with **JWT token generation**
+- ✅ **Bearer Token Authentication** middleware for protected routes
+- ✅ Centralized error handling
+- ✅ MVC architecture (Models, Controllers, Routes)
+- ✅ MongoDB connection using Mongoose
+- ✅ Well-structured & extendable codebase
+
+---
+
+## ⚙️ Tech Stack
+
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB (Mongoose ODM)
+- **Authentication:** JWT, bcryptjs
+- **Environment Management:** dotenv
+
+---
+
+## 📦 Installation
+
+### 1️⃣ Clone the repo
+
+```bash
+git clone https://github.com/Sajitha94/Authendication---Authorization.git
+cd Authendication---Authorization
+```

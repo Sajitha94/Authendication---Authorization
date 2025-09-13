@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "98c914e0-6940-49ad-bfef-291368f19f70",
+		"name": "Authentication and Authorization",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48257198",
+		"_collection_link": "https://sajithasubramani94-6119417.postman.co/workspace/sajitha's-Workspace~39057e6a-d9e1-44c8-80f4-538af7c525c8/collection/48257198-98c914e0-6940-49ad-bfef-291368f19f70?action=share&source=collection_link&creator=48257198"
+	},
+	"item": [
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"sajithaniha\",\r\n    \"email\":\"sajithasv8@gmail.com\",\r\n    \"password\":\"saji1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Base_Url}}/api/auth/register",
+					"host": [
+						"{{Base_Url}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"sajithasv@gmail.com\",\r\n    \"password\":\"saji1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Base_Url}}/api/auth/login",
+					"host": [
+						"{{Base_Url}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Route",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YzVjNzM0YTMyNjgyYWM2ZDc0M2IwZCIsImlhdCI6MTc1Nzc5MzM3MiwiZXhwIjoxNzU3OTY2MTcyfQ.vEd8jmUMuPj2kMlGyIE1CMfct30bYBrokqyPt3IY3bo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"sajitha@gmail.com\",\r\n    \"password\":\"saji1234\"\r\n}"
+				},
+				"url": {
+					"raw": "{{Base_Url}}/api/user",
+					"host": [
+						"{{Base_Url}}"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Base_Url",
+			"value": ""
+		}
+	]
+}
